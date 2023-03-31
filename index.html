@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <form class="form">
+        <div class="form-item form-item--day">
+          <label for="day">Day</label>
+          <input type="text" id="day" placeholder="DD" />
+          <span class="validation-msg valid" data-code="required">
+            This field is required
+          </span>
+          <span class="validation-msg valid" data-code="invalid">
+            Must be a valid day
+          </span>
+        </div>
+        <div class="form-item form-item--month">
+          <label for="month">Month</label>
+          <input type="text" id="month" placeholder="MM" />
+          <span class="validation-msg valid" data-code="required">
+            This field is required
+          </span>
+          <span class="validation-msg valid" data-code="invalid">
+            Must be a valid month
+          </span>
+        </div>
+        <div class="form-item form-item--year">
+          <label for="year">Year</label>
+          <input type="text" id="year" placeholder="YYYY" />
+          <span class="validation-msg valid" data-code="required">
+            This field is required
+          </span>
+          <span class="validation-msg valid" data-code="invalid">
+            Must be in the past
+          </span>
+        </div>
+      </form>
+
+      <div class="divider">
+        <button class="btn-calculate">
+          <img src="./assets/images/icon-arrow.svg" alt="Arrow down icon" />
+        </button>
+      </div>
+
+      <main class="main">
+        <div class="calculation">
+          <div class="calculated-item">
+            <span class="calculated-num num--year">--</span>
+            <span class="calculated-label">years</span>
+          </div>
+          <div class="calculated-item">
+            <span class="calculated-num num--month">--</span>
+            <span class="calculated-label">months</span>
+          </div>
+          <div class="calculated-item">
+            <span class="calculated-num num--day">--</span>
+            <span class="calculated-label">days</span>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+  </body>
+</html>
